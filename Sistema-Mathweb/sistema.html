@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Mathweb</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	<link rel="stylesheet" href="css\estilos.css"><!--El estilo principal donde sale los colores-->
+	<link rel="shortcut icon" href="img/logo.ico">
+
+	<link rel="stylesheet" type="text/css" href="css/sistema.css"><!--El css que se muestra el sistema-->
+	<script src="js\sistema.js"></script><!--El js que se muestra el sistema-->
+</head>
+<body>
+	<style>
+	    img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+	    display: none;
+		}
+	</style>
+	<header><!--El encabezado de nuestra página-->
+		<nav class="navbar navbar-inverse navbar-static-top" role="navegation"><!--Nuestro menu de navegación, la clase navbar es para agregar nuestro menu de navegación, navbar-inverse hacerlo de color negro, navbar-static-top hacemos que se quede en la parte de arriba-->
+			<div class="container"><!--Centrar todo el contenido-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nagevacion-fm"><!--Vamos agregar el boton para mostrar y ocultar el menú-->
+						<span class="sr-only">Desplegar / Ocultar Menú</span><!--sr-only Solo para dispositivos móviles-->
+						<span class="icon-bar"></span><!--Agregar las pequeñas lineas el boton-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand" style="cursor: default;">MATHWEB</a>
+				</div>
+				<!--Inicia Menú-->
+				<div class="collapse navbar-collapse" id="nagevacion-fm"><!--La id debe coincidir con el data-target="#nagevacion-fm" -->
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Inicio<span class="caret"></span><!--clase="caret", significa una fleca hacia abajo-->
+							</a>
+							<ul class="dropdown-menu " role="menu">
+								<li><a href="index.html#problema">Planteamiento</a></li>								
+								<li><a href="index.html#antecedentes">Antecedentes</a></li>
+								<li><a href="index.html#justificacion">Justificación</a></li>
+								<li><a href="index.html#objetivos">Objetivos</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="teoria.html" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Teoría <span class="caret"></span><!--clase="caret", significa una fleca hacia abajo-->
+							</a>
+							<ul class="dropdown-menu " role="menu">
+								<li><a href="teoria.html#web">Páginas Web</a></li>
+								<li><a href="teoria.html#matematicas">Matemáticas</a></li>
+								<li><a href="teoria.html#sumas">Sumas, restas, multiplicación y división</a></li>
+								<li><a href="teoria.html#fracciones">Fracciones y decimales</a></li>
+							</ul>
+						</li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+						<li class="active"><a href="sistema.html">Sistema Matemático</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--Aqui va el jumbotrom-->
+	<section class="jumbotron">
+		<div class="container"><!--Me centra todo el contenido, pero no al 100%-->
+			<img style="float: right;" class="img-thumbnail img-responsive" src="img\logo.jpg" alt="" width="160">
+			<h1>MATHWEB</h1>
+			<p>¡Por ser un estudiante que elige un estudio mejor de matemáticas!</p>
+		</div>
+	</section>
+	<section class="main container"><!--Centrar todo el contenido-->
+		<div class="row"><!--Una fila-->
+			<section class="posts col-md-12"><!--Una section de 9 espacio-->
+				<div class="miga-de-pan"><!--Significa para saber donde estamos-->
+					<ol class="breadcrumb"><!--Una lista ordenada-->
+						<li class="active"><a href="#" style="pointer-events: none;">MATHWEB</a></li>
+						<li><a href="#" style="pointer-events: none;">Categorias</a></li>
+						<li>Sistema Matemático</li>
+					</ol>
+				</div>
+				<!--Vamos agregar nuestros articulos-->
+				<p class="post clearfix"></p>
+
+				<!--Inicio-->
+				<div class="container">
+				    <div class="row">
+				        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+				            <div class="calculator">
+				                <h1>Sistema Matemático MATHWEB</h1>
+				                <hr>
+
+				                <!-- Cuadros de texto para ingresar los números y el operador -->
+				                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				                    <input type="number" id="number1" class="form-control" placeholder="Número 1" required>
+				                </div>
+				                
+				                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				                    <select id="operator" class="form-control" required>
+				                        <option value="">Selecciona un operador</option>
+				                        <option value="+">+</option>
+				                        <option value="-">-</option>
+				                        <option value="*">*</option>
+				                        <option value="/">/</option>
+				                    </select>
+				                </div>
+				                
+				                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				                    <input type="number" id="number2" class="form-control" placeholder="Número 2" required>
+				                </div>
+				                
+				                <!-- Cuadro de texto para mostrar el resultado -->
+				                <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				                    <input type="text" id="result" class="form-control" placeholder="Resultado" readonly>
+				                </div>
+
+				                <!-- Botones para calcular y limpiar -->
+				                <div class="buttons col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				                    <button class="btn btn-primary" onclick="calculate()">Calcular</button>
+				                    <button class="btn btn-danger" onclick="clearFields()">Limpiar campos</button>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<!--Fin-->
+
+
+				<nav>
+					<div class="center-block">
+						<ul class="pagination">
+							<li style="pointer-events: none;"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
+							<li><a href="index.html">1</a></li>
+							<li><a href="teoria.html">2</a></li>
+							<li><a href="contactenos.html">3</a></li>
+							<li class="active"><a href="sistema.html">4</a></li>
+							<li style="pointer-events: none;"><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</section>
+		</div>
+	</section>
+	
+	<footer><!--Pie de página-->
+		<div class="container"><!--Me centra todo el contenido-->
+			<div class="row"><!--Una fila-->
+				<div class="col-md-6">
+					<p>MATHWEB (POR UN ESTUDIO DE MATEMÁTICAS MEJOR)</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-right"><!--list-inline, significa texto enlinea-->
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="teoria.html">Teoría</a></li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+						<li><a href="sistema.html">Sistema Matemático</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js\jquery.js"></script>
+	<script src="js\bootstrap.min.js"></script>
+

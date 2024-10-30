@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Mathweb</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minium-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css"><!--El estilo principal donde sale los colores-->
+	<link rel="shortcut icon" href="img/logo.ico">
+</head>
+<body>
+	<style>
+	    img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+	    display: none;
+		}
+	</style>
+	<header><!--El encabezado de nuestra página-->
+		<nav class="navbar navbar-inverse navbar-static-top" role="navegation"><!--Nuestro menu de navegación, la clase navbar es para agregar nuestro menu de navegación, navbar-inverse hacerlo de color negro, navbar-static-top hacemos que se quede en la parte de arriba-->
+			<div class="container"><!--Centrar todo el contenido-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nagevacion-fm"><!--Vamos agregar el boton para mostrar y ocultar el menú-->
+						<span class="sr-only">Desplegar / Ocultar Menú</span><!--sr-only Solo para dispositivos móviles-->
+						<span class="icon-bar"></span><!--Agregar las pequeñas lineas el boton-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand" style="cursor: default;">MATHWEB</a>
+				</div>
+				<!--Inicia Menú-->
+				<div class="collapse navbar-collapse" id="nagevacion-fm"><!--La id debe coincidir con el data-target="#nagevacion-fm" -->
+					<ul class="nav navbar-nav">
+						
+						<li class="dropdown">
+							<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Inicio <span class="caret"></span><!--clase="caret", significa una fleca hacia abajo-->
+							</a>
+							<ul class="dropdown-menu " role="menu">
+								<li><a href="index.html#problema">Planteamiento</a></li>								
+								<li><a href="index.html#antecedentes">Antecedentes</a></li>
+								<li><a href="index.html#justificacion">Justificación</a></li>
+								<li><a href="index.html#objetivos">Objetivos</a></li>
+
+							</ul>
+						</li>
+						<li class="dropdown active">
+							<a href="teoria.html" class="dropdown-toggle" data-toggle="dropdown" role="button">
+								Teoría <span class="caret"></span><!--clase="caret", significa una fleca hacia abajo-->
+							</a>
+							<ul class="dropdown-menu " role="menu">
+								<li><a href="teoria.html#web">Páginas Web</a></li>
+								<li><a href="teoria.html#matematicas">Matemáticas</a></li>
+								<li><a href="teoria.html#sumas">Sumas, restas, multiplicación y división</a></li>
+								<li><a href="teoria.html#fracciones">Fracciones y decimales</a></li>
+							</ul>
+						</li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+						<li><a href="sistema.html">Sistema Matemático</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--Aqui va el jumbotrom-->
+	<section class="jumbotron">
+		<div class="container"><!--Me centra todo el contenido, pero no al 100%-->
+			<img style="float: right;" class="img-thumbnail img-responsive" src="img\logo.jpg" alt="" width="160">
+			<h1>MATHWEB</h1>
+			<p>¡Por ser un estudiante que elige un estudio mejor de matemáticas!</p>
+		</div>
+	</section>
+	<section class="main container"><!--Centrar todo el contenido-->
+		<div class="row"><!--Una fila-->
+			<section class="posts col-md-9"><!--Una section de 9 espacio-->
+				<div class="miga-de-pan"><!--Significa para saber donde estamos-->
+					<ol class="breadcrumb"><!--Una lista ordenada-->
+						<li class="active"><a href="#" style="pointer-events: none;">MATHWEB</a></li>
+						<li><a href="#" style="pointer-events: none;">Categorias</a></li>
+						<li>Teoría</li>
+					</ol>
+				</div>
+				<!--Vamos agregar nuestros articulos-->
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left" id="web"><!--pull-left, significa que lo estamos empujando hacia la izquierda -->
+						<img class="img-thumbnail img-responsive" src="img\ambiente\img5.jpg" alt="">
+					</a><!--img-thumbnail, significa agregar bordes a la imagen -->
+					<h2 class="post-title" style="text-align: center">
+						<a href="#web">Páginas Web</a>
+					</h2>
+					<p><span class="post-fecha">16 de Julio del 2024</span> por <span class="post-autor"><a href="#" style="pointer-events: none;">Manfred Escartín</a></span></p><!--post-autor, significa quién fue el que escribio la entrada-->
+					<p class="post-contenido text-justify">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Descripción 01</b>
+							<br>◉ Una página web es un documento en línea que organiza
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Descripción 02</b>
+							<br>◉ Presenta información visualmente, utilizado para informar, vender, o educar<br>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Descripción 03</b>
+							<br>◉ La primera página web, creada por Tim Berners-Lee en 1990
+						</div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Descripción 04</b>
+							<br>◉ Marcó el inicio de la World Wide Web
+						</div>
+					</p>
+				</article>
+				<!--Vamos agregar nuestros articulos-->
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left" id="matematicas"><!--pull-left, significa que lo estamos empujando hacia la izquierda -->
+						<img class="img-thumbnail img-responsive" src="img\ambiente\img6.jpg" alt="">
+					</a><!--img-thumbnail, significa agregar bordes a la imagen -->
+					<h2 class="post-title" style="text-align: center">
+						<a href="#matematicas">Matemáticas</a>
+					</h2>
+					<p><span class="post-fecha">27 de Agosto del 2024</span> por <span class="post-autor"><a href="#" style="pointer-events: none;">Mauricio Sibaja</a></span></p><!--post-autor, significa quién fue el que escribio la entrada-->
+					<p class="post-contenido text-justify">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Definición 01</b>
+							<br>◉ Las matemáticas estudian relaciones entre cantidades y magnitudes
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Definición 02</b>
+							<br>◉ Se originaron en Mesopotamia, desarrollándose en India, China y Grecia
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Definición 03</b>
+							<br>◉ Viète y Descartes impulsaron el álgebra y la geometría, mientras que Leibniz y Newton desarrollaron el cálculo infinitesimal
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Definición 04</b>
+							<br>◉ En el siglo XIX, Cauchy, Weierstrass y Cantor formalizaron el cálculo y la teoría de conjuntos
+						</div>
+					</p>
+				</article>
+
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left" id="sumas"><!--pull-left, significa que lo estamos empujando hacia la izquierda -->
+						<img class="img-thumbnail img-responsive" src="img\ambiente\img7.jpg" alt="">
+					</a><!--img-thumbnail, significa agregar bordes a la imagen -->
+					<h2 class="post-title" style="text-align: center">
+						<a href="#sumas">Sumas, restas, multiplicación y división</a>
+					</h2>
+					<p><span class="post-fecha">15 de Septiembre del 2024</span> por <span class="post-autor"><a href="#" style="pointer-events: none;">Danbhir Montero</a></span></p><!--post-autor, significa quién fue el que escribio la entrada-->
+					<p class="post-contenido text-justify ">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Explicación 01</b>
+							<br>◉ Las sumas combinan números para obtener un total
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Explicación 02</b>
+							<br>◉ Las restas es una operación fundamental para calcular reducciones
+						</div>
+
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Explicación 03</b>
+							<br>◉ La multiplicación combina varias sumas de los mismos números
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Explicación 04</b>
+							<br>◉ La división distribuye números en partes iguales
+						</div>
+					</p>
+				</article>
+				<!--Vamos agregar nuestros articulos-->
+				<article class="post clearfix">
+					<a href="#" class="thumb pull-left" id="fracciones"><!--pull-left, significa que lo estamos empujando hacia la izquierda -->
+						<img class="img-thumbnail img-responsive" src="img\ambiente\img8.jpg" alt="">
+					</a><!--img-thumbnail, significa agregar bordes a la imagen -->
+					<h2 class="post-title" style="text-align: center">
+						<a href="#fracciones">Fracciones y decimales</a>
+					</h2>
+					<p><span class="post-fecha">02 de Octubre del 2024</span> por <span class="post-autor"><a href="#" style="pointer-events: none;">Manfred Escartín</a></span></p><!--post-autor, significa quién fue el que escribio la entrada-->
+					<p class="post-contenido text-justify">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Interpretación 01</b>
+							<br>◉ Las fracciones, que aparecieron en Egipto alrededor del 1800 a.C
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Interpretación 02</b>
+							<br>◉ Representan partes de un todo con numerador y denominador
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Interpretación 03</b>
+							<br>◉ Los decimales, que usan la base 10 como 0.5, se usaban en la India desde el siglo III a.C.
+						</div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
+							<b>Interpretación 04</b>
+							<br>◉ Fueron difundidos en Europa por matemáticos árabes en el siglo XI, convirtiéndose en el sistema más común hoy en día
+						</div>
+					</p>
+				</article>
+				<nav>
+					<div class="center-block">
+						<ul class="pagination">
+							<li class="" style="pointer-events: none;"><a href="#">&laquo;<span class="sr-only">Anterior</span></a></li>
+							<li><a href="index.html">1</a></li>
+							<li class="active"><a href="teoria.html">2</a></li>
+							<li><a href="contactenos.html">3</a></li>
+							<li><a href="sistema.html">4</a></li>
+							<li class="" style="pointer-events: none;"><a href="#">&raquo;<span class="sr-only">Siguiente</span></a></li>
+						</ul>
+					</div>
+				</nav>
+			</section>
+			<aside class="col-md-3 hidden-xs hidden-sm"><!--Vamos a ocultar el aside para dispositivos extra pequeños y pequeño-->
+				<h4>Categorías</h4>
+				<div class="list-group">
+					<a href="#web" class="list-group-item active" style="background-color: #428BCA">Páginas Web</a>
+					<a href="#matematicas" class="list-group-item">Matemáticas</a>
+					<a href="#sumas" class="list-group-item">Sumas, restas, multiplicación y división</a>
+					<a href="#fracciones" class="list-group-item">Fracciones y decimales</a>
+				</div>
+				<h4>Articulos Recientes</h4>
+				<div href="#" onclick="return(false)" class="list-group-item">
+					<h4 class="list-group-item-heading">Páginas Web:</h4><!--Es el titulo de nuestro articulo-->
+					<p class="list-group-item-text">Fortalezas, Oportunidades, Debilidades y Amenazas.</p><!--Nuesro texto-->
+				</div>
+
+				<div href="#" onclick="return(false)" class="list-group-item">
+					<h4 class="list-group-item-heading">Matemáticas:</h4><!--Es el titulo de nuestro articulo-->
+					<p class="list-group-item-text">Fortalezas, Oportunidades, Debilidades y Amenazas.</p><!--Nuesro texto-->
+				</div>
+				<div href="#" onclick="return(false)" class="list-group-item">
+					<h4 class="list-group-item-heading">Sumas, restas, multiplicación y división:</h4><!--Es el titulo de nuestro articulo-->
+					<p class="list-group-item-text">Producto, Precio, Promoción y Plaza</p><!--Nuesro texto-->
+				</div>
+				<div href="#" onclick="return(false)" class="list-group-item">
+					<h4 class="list-group-item-heading">Fracciones y decimales:</h4><!--Es el titulo de nuestro articulo-->
+					<p class="list-group-item-text">Asociaciones claves, Propuesta de valor, Estructura de costos y Ingresos</p><!--Nuesro texto-->
+				</div>
+			</aside>
+		</div>
+	</section>
+	
+	<footer><!--Pie de página-->
+		<div class="container"><!--Me centra todo el contenido-->
+			<div class="row"><!--Una fila-->
+				<div class="col-md-6">
+					<p>MATHWEB (POR UN ESTUDIO DE MATEMÁTICAS MEJOR)</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="list-inline text-right"><!--list-inline, significa texto enlinea-->
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="teoria.html">Teoría</a></li>
+						<li><a href="contactenos.html">Contáctenos</a></li>
+						<li><a href="sistema.html">Sistema Matemático</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script src="js\jquery.js"></script>
+	<script src="js\bootstrap.min.js"></script>

@@ -1,0 +1,75 @@
+.calculator {
+    background-color: #ffffff; /* Color de fondo blanco. */
+    padding: 20px; /* Espaciado interno. */
+    border-radius: 15px; /* Esquinas redondeadas. */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad. */
+    width: auto; /* Ancho automático para ajustarse al contenido. */
+    min-height: 60vh; /* Altura mínima que se ajusta al contenido */
+}
+body{
+     background-color: #f4f4f9; /* Establece un color de fondo gris claro para toda la página. */
+}
+
+.calculator h1 {
+    text-align: center; /* Centra el texto del título horizontalmente. */
+    color: #333; /* Establece el color del texto en un tono oscuro para mejorar la legibilidad. */
+    margin-bottom: 20px; /* Agrega un margen de 20px en la parte inferior del título. */
+}
+
+input[type="number"], select, input[type="text"] {
+    width: 100%; /* Ajusta el ancho de los campos al 90% del contenedor padre. */
+    padding: 15px; /* Agrega un espaciado interno de 15px dentro de los campos. */
+    margin-bottom: 10px; /* Agrega un margen de 10px en la parte inferior de cada campo. */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente a 1.2 veces el tamaño de fuente base. */
+    border: 2px solid #ddd; /* Establece un borde delgado de 2px de color gris claro alrededor de los campos. */
+    border-radius: 8px; /* Redondea las esquinas de los campos con un radio de 8px. */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Aplica una sombra interna para darle un efecto de profundidad. */
+}
+
+select {
+    font-size: 1.2em;
+    background-color: #fff;
+}
+
+input[type="text"]#result {
+    background-color: #f0f0f0; /* Establece un color de fondo gris claro para el campo de resultado. */
+    color: #333; /* Establece el color del texto en un tono oscuro. */
+    border: 2px solid #ddd; /* Establece un borde delgado de color gris claro alrededor del campo de resultado. */
+    padding: 15px; /* Agrega un espaciado interno de 15px dentro del campo de resultado. */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente a 1.2 veces el tamaño de fuente base. */
+    border-radius: 8px; /* Redondea las esquinas del campo de resultado con un radio de 8px. */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Aplica una sombra interna para un efecto de profundidad. */
+}
+
+.buttons {
+    display: grid; /* Utiliza un diseño de cuadrícula para organizar los botones. */
+    grid-template-columns: repeat(2, 1fr); /* Crea una cuadrícula con dos columnas de igual tamaño. */
+    gap: 10px; /* Agrega un espacio de 10px entre los botones. */
+}
+
+button {
+    padding: 15px; /* Agrega un espaciado interno de 15px dentro del botón. */
+    font-size: 1.2em; /* Aumenta el tamaño de la fuente a 1.2 veces el tamaño de fuente base. */
+    border: none; /* Elimina el borde predeterminado del botón. */
+    border-radius: 8px; /* Redondea las esquinas del botón con un radio de 8px. */
+    background-color: #007bff; /* Establece un color de fondo azul para el botón. */
+    color: white; /* Establece el color del texto en blanco. */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón. */
+    transition: background-color 0.3s ease; /* Aplica una transición suave para el cambio de color de fondo. */
+}
+
+button:active {
+    background-color: #0056b3; /* Cambia el color de fondo a un tono azul más oscuro cuando el botón está presionado. */
+}
+
+button:focus {
+    outline: none; /* Elimina el contorno predeterminado del botón cuando tiene el foco. */
+}
+
+button.clear {
+    background-color: #dc3545; /* Establece un color de fondo rojo para el botón de borrar. */
+}
+
+button.clear:active {
+    background-color: #c82333; /* Cambia el color de fondo a un tono rojo más oscuro cuando el botón de borrar está presionado. */
+}

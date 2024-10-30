@@ -1,0 +1,40 @@
+/* --Header-- */
+.navbar{/*El navbar es el que agregando el espaciado debajo y se lo vamos a quitar*/
+	margin-bottom: 0px;/*Un margin de abajo de 0*/ 
+}
+.jumbotron{
+	background: #428BCA;/*Color de fondo celeste*/
+	color:#fff;/*Color de texto blanco*/
+	padding: 20px 0;/*Un padding de arriba y abajo de 20px, derecha e izquierda de 20px*/
+}
+/* --Post--*/
+.main{
+	margin-top: 20px;/*Margen el parte superior*/
+	margin-bottom: 20px;/*Margen en la parte inferior*/
+}
+.post{
+	padding-bottom: 20px;/*Padding en la parte de abajo*/
+	margin-bottom: 20px;/*Margin en la parte de abajo*/
+	border-bottom:1px solid #999;/*Un border en la parte inferior de 1px y el color gris*/ 
+}
+.post .post-title a{/*Estamos accediendo al titulo nuestro post*/
+	color:#333;/*Color negro*/
+}
+.post .thumb{
+	margin-right: 10px;
+	width: 40%;
+}
+.post .thumb img{/*Que la imagen tenga un 100% de lo que pide el contenedor actual*/
+	width: 100%;
+}
+.post .contenedor-botones{
+	width: 100%;
+}
+/*--Media Querie--*/
+@media screen and (max-width: 768px){/*Cuando la pantalla se hace pequeña*/
+	.post .thumb{
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+}
